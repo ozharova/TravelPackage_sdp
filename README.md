@@ -18,7 +18,7 @@ combinations. That is exactly the case the Builder pattern targets.
 |---|---|---|
 | Product | `TravelPackage.java` | Immutable result object. Can only be constructed via the builder. |
 | Builder | `TravelPackageBuilder.java` | Fluent, step-by-step assembly; validates state in `build()`. |
-| Director | `TravelPackageDirector.java` | Encapsulates two reusable configurations: budget and luxury trips. |
+| Director | `TravelPackageDirector.java` | Encapsulates three reusable configurations: budget, comfort and luxury trips. |
 | Client | `Main.java` | Exercises the director, a custom build, and the validation failure path. |
 
 ## Predefined configurations
