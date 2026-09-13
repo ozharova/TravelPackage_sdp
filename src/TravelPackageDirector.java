@@ -14,6 +14,17 @@ public class TravelPackageDirector {
                 .build();
     }
 
+    public TravelPackage createComfortTrip(String destination) {
+        return new TravelPackageBuilder()
+                .destination(destination)
+                .hotel("4-star hotel")
+                .days(5)
+                .transport("Economy class flight")
+                .withMeals()
+                .withInsurance()
+                .build();
+    }
+
     public TravelPackage createLuxuryTrip(String destination) {
         return new TravelPackageBuilder()
                 .destination(destination)

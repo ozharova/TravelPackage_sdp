@@ -5,10 +5,11 @@ Assignment #1 — Builder creational design pattern (Software Design Patterns co
 ## What is the product?
 
 `TravelPackage` — a travel package made of a destination, hotel, trip length,
-transport, and a set of optional extras (meals, insurance, a guide). Travel
-packages genuinely need step-by-step construction: most fields are required,
-a few are optional add-ons, and a travel agency reuses the same "recipes"
-(budget trip, luxury trip) over and over while still supporting fully custom
+transport, and a set of optional extras (meals, insurance, a guide).
+`destination`, `hotel`, `transport` and `days` are required; `meals`,
+`insurance` and `guide` are optional add-ons. Travel packages genuinely need
+step-by-step construction: a travel agency reuses the same "recipes" (budget,
+comfort, luxury trip) over and over while still supporting fully custom
 combinations. That is exactly the case the Builder pattern targets.
 
 ## Structure
@@ -19,6 +20,12 @@ combinations. That is exactly the case the Builder pattern targets.
 | Builder | `TravelPackageBuilder.java` | Fluent, step-by-step assembly; validates state in `build()`. |
 | Director | `TravelPackageDirector.java` | Encapsulates two reusable configurations: budget and luxury trips. |
 | Client | `Main.java` | Exercises the director, a custom build, and the validation failure path. |
+
+## Predefined configurations
+
+- Budget Trip
+- Comfort Trip
+- Luxury Trip
 
 Run it:
 

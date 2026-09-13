@@ -10,6 +10,9 @@ public class Main {
         TravelPackage budgetTrip = director.createBudgetTrip("Almaty");
         System.out.println("Budget trip: " + budgetTrip);
 
+        TravelPackage comfortTrip = director.createComfortTrip("Thailand");
+        System.out.println("Comfort trip: " + comfortTrip);
+
         TravelPackage luxuryTrip = director.createLuxuryTrip("Bali");
         System.out.println("Luxury trip: " + luxuryTrip);
 
